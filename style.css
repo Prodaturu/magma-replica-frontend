@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');  /*. font-family: 'Jost', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blued: #0A3CCE;
+    --lightgray: rgba(192, 194, 197, 0.4);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blued);
+}
+
+/*+ CSS properties for page1 elements.*/
+
+.page1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Jost', sans-serif;
+}
+
+.page1 video{
+    object-fit: cover;
+    object-position: bottom right;
+}
+
+.page1 .navigation-bar{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 3vh 3vw;
+}
+
+.page1 .navigation-bar #navigation-bars-right button{
+    color: white;
+    background-color: transparent;
+    padding: 1.25vh 1.25vw;
+    border-radius: 50px;
+    border: 1px solid var(--lightgray);
+}
+
+.page1 .navigation-bar img{
+    width: 4.25vw;
+}
+
+.page1 .bottom-p1{
+    position: absolute;
+    color:white;
+    bottom: 10vh;
+    left: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page1 .bottom-p1 .tagline{
+    font-weight: 300;
+    font-size: 6vw;
+    line-height: 6vw;
+    padding: 7.5vh 0vw;
+}
+
+.page1 .bottom-p1 .company-insights-p1{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    background-color: transparent;
+    vertical-align: baseline;
+    width: 35vw;
+    justify-content: space-between;
+}
+
+.page1 .bottom-p1 .company-insights-p1 button{
+    height: 3vw;
+    color: #0940DF;
+    font-family: 'Jost', sans-serif;
+    padding: 0 2.75vw;
+    font-weight: 400;
+    border-radius: 50px;
+    border: none;
+    font-size: max(12px,1vw);
+}
+
+/*+ CSS properties for page2 elements.*/
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blued);
+    position: relative;
+    color: #fff;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.page2 p{
+    font-weight: 100;
+    font-size: 1.1vw;
+}
+
+.page2 h1{
+    font-weight: 300;
+    letter-spacing: -4px;
+    padding: 5vh 0;
+    font-size: 3.5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff69;
+}

@@ -1,0 +1,111 @@
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+video{
+    z-index: -1;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.page1>video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page1>nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    /* background: palegoldenrod; */
+    padding: 0 3%;
+}
+
+.page1>nav>img {
+    width: 75px;
+    margin: 1vw;
+    margin-top: 2vw;
+}
+
+#rit-nav>button{
+    padding: 10px 20px;
+    margin: 5px ;
+    border-radius: 50px;
+    border: 1px solid #8b8b8b;
+    background-color: transparent;
+    color: #fff;
+    font-family: sans-serif; /*font 1*/
+    font-size: 16px;
+}
+
+.page1-bottom{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:10%;
+    gap: 2vw;
+    margin:  0 0 0 10vw;
+    color: white;
+}
+
+.in-page1-bottom{
+    display: flex;
+    color: white;
+    font-size: 1.25vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.in-page1-bottom>h1{
+    
+}
+
+.in-page1-bottom button{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #0942E1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 2vw;
+}
+
+/* .page1-bottom{
+    position:absolute;
+    left: 15%;
+    height: 30vh;
+    width: 50vw;
+    bottom: 5%;
+}
+
+.page1-bottom>h1 {
+    font-size: 6vw;
+    color: white;
+    line-height:7vw;
+    font-family:'Nunito Sans', sans-serif; /* font 2*/
+    /* font-weight: 400;
+}
+
+.in-page1-bottom{
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-page1-bottom>p{
+    font-size: max(1.4vw,16px);
+    color: white;
+} */ 
